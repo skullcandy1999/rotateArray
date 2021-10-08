@@ -45,7 +45,10 @@ int main()
 			cin >> arr[i];
 		}
 		//Rotation solution
-		
+		d=(d%n);
+		reverse(arr.begin()+d,arr.end());
+		reverse(arr.begin(),arr.begin()+d);
+		reverse(arr.begin(),arr.end());
 		//printing the elements of the array
 		for (int i = 0; i < n; i++)
 		{
